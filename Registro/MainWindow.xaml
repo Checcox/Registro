@@ -14,6 +14,7 @@
         <TextBox x:Name="txtcognome" HorizontalAlignment="Left" Margin="280,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="29"/>
         <Button x:Name="btnvisualizza" Content="Visualizza" HorizontalAlignment="Left" Margin="521,139,0,0" VerticalAlignment="Top" Height="57" Width="141" Background="#FF8AB2F1" Click="btnvisualizza_Click"/>
         <ListBox x:Name="lstvisualizza" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="268,139,331,126"/>
+        <Button x:Name="btnElimina" Content="Elimina" HorizontalAlignment="Left" Margin="147,0,0,0" VerticalAlignment="Center" Click="btnElimina_Click"/>
 
     </Grid>
 </Window>

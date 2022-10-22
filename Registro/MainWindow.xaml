@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:Registro"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FFD8D8D8">
+        <Button x:Name="btnInserisci" Content="Inserisci" HorizontalAlignment="Left" Margin="521,55,0,0" VerticalAlignment="Top" Height="57" Width="141" Background="#FF8AB2F1" Click="btnInserisci_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="116,18,0,0" TextWrapping="Wrap" Text="nome" VerticalAlignment="Top" Width="31"/>
+        <TextBlock HorizontalAlignment="Left" Margin="308,18,0,0" TextWrapping="Wrap" Text="cognome" VerticalAlignment="Top" RenderTransformOrigin="-0.021,0.918"/>
+        <TextBox x:Name="txtnome" HorizontalAlignment="Left" Margin="72,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtcognome" HorizontalAlignment="Left" Margin="280,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

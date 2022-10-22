@@ -20,9 +20,29 @@ namespace Registro
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Alunno> classe;
         public MainWindow()
         {
             InitializeComponent();
+
+            classe = new List<Alunno>();
+        }
+
+        private void btnInserisci_Click(object sender, RoutedEventArgs e)
+        {
+            Alunno a = new Alunno(txtnome.Text, txtcognome.Text);
+            classe.Add(a);
+            txtcognome.Text = "";
+            txtnome.Text = "";
+        }
+    }
+    class Alunno
+    {
+        string nome, cognome;
+        public Alunno(string n, string c)
+        {
+            nome = n;
+            cognome = c;
         }
     }
 }

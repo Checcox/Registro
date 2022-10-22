@@ -35,6 +35,14 @@ namespace Registro
             txtcognome.Text = "";
             txtnome.Text = "";
         }
+
+        private void btnvisualizza_Click(object sender, RoutedEventArgs e)
+        {
+            foreach(Alunno a in classe)
+            {
+                lstvisualizza.Items.Add(a.Stampa());
+            }
+        }
     }
     class Alunno
     {
@@ -43,6 +51,11 @@ namespace Registro
         {
             nome = n;
             cognome = c;
+        }
+
+        public string Stampa()
+        {
+            return nome + " " + cognome;
         }
     }
 }
